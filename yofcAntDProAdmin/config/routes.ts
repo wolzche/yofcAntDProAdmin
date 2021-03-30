@@ -4,7 +4,7 @@
     layout: false,
     routes: [
       {
-        path: '/user',
+        path: '/user', // 是不是和上面重复了呢？
         routes: [
           {
             name: 'login',
@@ -46,6 +46,7 @@
     path: '/',
     redirect: '/welcome',
   },
+  // 最后放置没有匹配的路由
   {
     component: './404',
   },

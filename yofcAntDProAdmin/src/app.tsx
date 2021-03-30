@@ -1,3 +1,4 @@
+// umi约定src/app.tsx整个文件为运行时配置 https://umijs.org/zh-CN/docs/runtime-config
 import type { Settings as LayoutSettings } from '@ant-design/pro-layout';
 import { PageLoading } from '@ant-design/pro-layout';
 import { notification } from 'antd';

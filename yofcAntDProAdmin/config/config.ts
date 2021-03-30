@@ -4,6 +4,7 @@ import { join } from 'path';
 
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
+// 全局路由配置
 import routes from './routes';
 
 const { REACT_APP_ENV } = process.env;
@@ -16,7 +17,8 @@ export default defineConfig({
   },
   layout: {
     // https://umijs.org/zh-CN/plugins/plugin-layout
-    locale: true,
+    // locale: true,
+    locale: true, // 当前layout但语言设置 zh-CN | zh-TW | en-US
     siderWidth: 208,
     ...defaultSettings,
   },
@@ -35,6 +37,7 @@ export default defineConfig({
     ie: 11,
   },
   // umi routes: https://umijs.org/docs/routing
+  // 如果没有routes这个配置key,Umi会进入约定路由模式，即通过分析src/page目录拿到路由配置，本应用中不采用约定式
   routes,
   // Theme for antd: https://ant.design/docs/react/customize-theme-cn
   theme: {

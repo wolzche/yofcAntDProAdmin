@@ -7,14 +7,15 @@ const Settings: LayoutSettings & {
   navTheme: 'light',
   // 拂晓蓝
   primaryColor: '#1890ff',
-  layout: 'mix',
-  contentWidth: 'Fluid',
-  fixedHeader: false,
-  fixSiderbar: true,
+  layout: 'mix', // 其他的配置项还有 side | top
+  contentWidth: 'Fluid', // layout的内容模式, Fluid：自适应
+  fixedHeader: false, // 是否固定 header 到顶部
+  fixSiderbar: true, // 是否固定导航
   colorWeak: false,
-  title: 'Ant Design Pro',
+  title: '长飞数据中台系统',
   pwa: false,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  // logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  logo: null, // 不符合ts给出的类型要求，但可以隐藏logo显示
   iconfontUrl: '',
 };
 
