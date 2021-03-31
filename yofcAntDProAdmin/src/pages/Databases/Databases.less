@@ -1,0 +1,29 @@
+@import '~antd/lib/style/themes/default.less';
+
+.title {
+  background: rgb(146, 242, 121);
+}
+.dbContainer {
+  height: 100%;
+  display: flex;
+  justify-content: row;
+  .left {
+    width: 35%;
+    .optBtns {
+      color: #000;
+      &:hover {
+        color: #1890FF;
+      }
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .sqlBtn {
+      .optBtns();
+      font-weight: 500;
+    }
+  }
+  .right {
+    margin-left: 20px;
+    width: 65%;
+  }
+}

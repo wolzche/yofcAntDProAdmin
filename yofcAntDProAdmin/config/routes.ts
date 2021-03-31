@@ -22,6 +22,12 @@
     component: './Welcome',
   },
   {
+    path: '/dbs',
+    name: 'dbs',
+    icon: 'smile',
+    component: './Databases/Databases.tsx',
+  },
+  {
     path: '/admin',
     name: 'admin',
     icon: 'crown',
